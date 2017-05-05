@@ -16,14 +16,22 @@ public class IndexController {
     @RequestMapping(value = "/index",method = RequestMethod.GET)
     public String index(ModelMap map){
         map.addAttribute("title","首页");
-        String url = "register";
-        map.addAttribute("register",url);
+        String register_url  = "register";
+        String forgetPwd_url = "forgetPwd";
+        map.addAttribute("register",register_url);
+        map.addAttribute("forgetPwd",forgetPwd_url);
         return "index/index";
     }
 
     @RequestMapping(value = "/register",method = RequestMethod.GET)
     public String register(ModelMap map){
-        map.addAttribute("title","注册");
+        map.addAttribute("title","注册用户");
         return "index/register";
+    }
+
+    @RequestMapping(value = "/forgetPwd",method = RequestMethod.GET)
+    public String forgetPwd(ModelMap map){
+        map.addAttribute("title","忘记密码");
+        return "index/forgetPwd";
     }
 }

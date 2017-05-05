@@ -41,7 +41,8 @@
                 <article class="corner-r-f"></article>
 
                 <div class="login-forgetpassword">
-                    <a class="login-forgetpassword-a" href="${register}">忘记密码?</a>
+                    <a class="login-forgetpassword-a" href="${register}">申请注册?</a>
+                    <a class="login-forgetpassword-a" href="${forgetPwd}">忘记密码?</a>
                 </div>
 
                 <button type="button" class="green-btn login">登录</button>
