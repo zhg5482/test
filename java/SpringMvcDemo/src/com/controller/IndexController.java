@@ -13,13 +13,27 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @RequestMapping(value = "/index")
 public class IndexController {
 
-    @RequestMapping(value = "/index",method = RequestMethod.GET)
-    public String index(ModelMap map){
-        map.addAttribute("title","首页");
+    @RequestMapping(value = "/login",method = RequestMethod.GET)
+    public String login(ModelMap map){
+        map.addAttribute("title","登录");
         String register_url  = "register";
         String forgetPwd_url = "forgetPwd";
         map.addAttribute("register",register_url);
         map.addAttribute("forgetPwd",forgetPwd_url);
+        return "index/login";
+    }
+
+    @RequestMapping(value = "/login",method = RequestMethod.POST)
+    public String login(){
+        if(1==1){
+            return "redirect:/namespace/toController";
+        }
+        return "index/login";
+    }
+
+    @RequestMapping(value = "/index",method = RequestMethod.GET)
+    public String index(ModelMap map){
+        map.addAttribute("title","首页");
         return "index/index";
     }
 
