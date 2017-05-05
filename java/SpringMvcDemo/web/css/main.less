@@ -1,0 +1,675 @@
+/* Value Setting */
+@light-white-bg:#ebebeb;               /*浅白色背景色*/
+@main:#222;                            /*主色调----文字黑色*/
+@assist:#666;                          /*辅助色----文字灰色*/
+@white:#fff;                           /*白色*/
+@green:#39a883;                        /*绿色*/
+@border:#e1e5e5;                       /*底部标签分割线*/
+@dark-gray:#4b4c4c;                    /*深灰色*/
+@middle-gray:#7d807e;                  /*中灰色*/
+@light-gray:#abb1b2;                   /*浅灰色*/
+@green-font-color:#90d3af;             //字体颜色的绿色
+
+
+.throught-line{text-decoration:line-through;}
+
+.green{color: @green;}
+
+@wid:96%;
+
+@font-size-large: 18px;
+@font-size-middle:16px;
+@font-size-small: 14px;
+
+@p-fixed:fixed;
+@p-relative:relative;
+@p-absolute:absolute;
+@d-inline-block:inline-block;
+@d-block:block;
+@d-none:none;
+@t-al-l:left;
+@t-al-c:center;
+@t-al-r:right;
+
+
+.fl {float: left;}
+.fr {float: right;}
+.pf{position: @p-fixed;}
+.pr{position: @p-relative;}
+.pa{position: @p-absolute;}
+.dib{display:@d-inline-block}
+.db{display:@d-block}
+.dn{display:@d-none}
+.t-al-l{text-align:@t-al-l}
+.t-al-c{text-align:@t-al-c}
+.t-al-r{text-align:@t-al-r}
+
+/* Global Setting */
+body,button,input,select,textarea {
+  font-family:"黑体简", "微软雅黑", "黑体", "Helvetica Neue", Helvetica, Arial,    sans-serif;
+  font-size: @font-size-small;
+  color:@main;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+body,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,li,th,td,p,blockquote,pre,form,fieldset,legend,input,button,textarea,hr{margin:0;padding:0;outline: none}
+ul,ol,li{list-style:none;}
+input,label{vertical-align:middle;}
+input,button,select,textarea,input:focus, textarea:focus{
+  //  -webkit-appearance: none;
+  -webkit-background-clip: padding-box;
+  outline:none;
+  -webkit-tap-highlight-color:@white;
+}
+textarea{resize:none;}
+a, a:hover, a:link, a:visited {text-decoration: none;}
+a:focus, *:focus {outline:none;outline:medium;}
+
+input[type="text"],input[type="password"],input[type="date"]{
+  -webkit-appearance:none;
+  appearance:none;
+  outline:none;
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+img {border: 0;}
+html{height: 100%;}
+html,body{background:@light-white-bg; }
+body{
+  min-height:100%; height:auto !important; height:100%;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill{
+  box-shadow: inset 0 0 0 1000px #fff;
+  -moz-box-shadow: inset 0 0 0 1000px #fff;
+  -webkit-box-shadow: inset 0 0 0 1000px #fff;
+}
+
+/*******度撑不开-----开始****/
+.clearfix:after {visibility: hidden;.db;font-size: 0;content: " ";clear: both;height: 0;}
+.clearfix{*zoom:1;}
+/*******度撑不开------结束*****/
+
+
+/*******科室数据月报告------开始*****/
+.DepartmentMonthlyReportWrape{
+  padding-top: 15px;
+}
+
+.DepartmentMonthlyReportWrape > .head{
+  padding:15px;
+  background: @white;
+  margin-bottom: 15px;
+  border-bottom: 1px solid @border;
+  font-size: @font-size-middle;
+  color: @main;
+}
+
+.DepartmentMonthlyReportWrape > .head > p:first-child,
+.DepartmentMonthlyReportWrape > .head > p:nth-child(2){
+  margin-bottom:6px;
+}
+
+.DepartmentMonthlyReportWrape > .chart-article{
+  background: @white;
+  border-bottom:1px solid @border;
+  border-top:1px solid @border;
+  padding: 0 0 30px;
+  margin-bottom: 15px;
+}
+
+.DepartmentMonthlyReportWrape > .chart-article > .chart-item-title{
+  padding: 0 15px;
+}
+
+.DepartmentMonthlyReportWrape > .chart-article > .chart-item-title > h4{
+  padding: 12px 0;
+  font-weight: normal;
+  font-size:@font-size-middle;
+  color: @main;
+  margin-bottom: 2px;
+  border-bottom:1px solid @border;
+  margin-bottom: 20px;
+}
+
+.DepartmentMonthlyReportWrape .list-report > .report-ul{
+  margin-top: 30px;
+  padding: 0 15px;
+}
+
+.DepartmentMonthlyReportWrape .list-report > .report-ul > .report-ul-li{
+  .fl;
+  width:33.33%;
+  font-size: @font-size-small;
+  color: #4b4c4b;
+  .t-al-c;
+}
+
+.DepartmentMonthlyReportWrape .list-report > .report-ul > .report-ul-li > .report-ul-li-con{
+  border:1px solid @border;
+  border-radius: 5px;
+  background: @white;
+  margin-right: 10px;
+  padding:15px 0;
+}
+
+.DepartmentMonthlyReportWrape .list-report > .report-ul > .report-ul-li:nth-child(2) > .report-ul-li-con{
+  margin-right: 5px;
+  margin-left:5px;
+}
+
+.DepartmentMonthlyReportWrape .list-report > .report-ul > .report-ul-li:nth-child(3) > .report-ul-li-con{
+  margin-right: 0px;
+  margin-left:10px;
+}
+
+.DepartmentMonthlyReportWrape .list-report > .report-ul > .report-ul-li > .report-ul-li-con > .num{
+  margin-top:24px;
+  margin-bottom: 24px;
+  font-size:24px;
+  color: #39a883;
+}
+
+.DepartmentMonthlyReportWrape .list-report > .report-ul > .report-ul-li > .report-ul-li-con > .add-num > span{
+  color: #fe8800;
+  margin-left: 3px;
+}
+
+.chart-bottom-line-wrape{
+  padding: 0 15px;
+}
+
+.chart-bottom-line-wrape > .chart-bottom-line{
+  height:1px;
+  border-bottom: 1px solid @border;
+  margin: 20px auto;
+  clear: both;
+}
+
+.DepartmentMonthlyReportWrape .chart-table-wrape{
+  padding: 0 15px;
+  margin-top: 20px;
+}
+
+.DepartmentMonthlyReportWrape .chart-table-wrape > .chart-table{
+  background: #ffeda8;
+  color: #43474c;
+  font-size: 14px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: auto;
+  width: 100%;
+}
+
+.DepartmentMonthlyReportWrape .chart-table-wrape > .chart-table > tbody > tr > td{
+  border: 1px solid #fbe491;
+  line-height: 30px;
+  height: 30px;
+  padding: 0 6px;
+  text-align: center;
+}
+
+.chart-article-download{
+  border-bottom: 1px solid @border;
+  border-top: 1px solid @border;
+  background: @white;
+  padding: 20px 0;
+  margin-bottom: 12px;
+  color:@main;
+  overflow-x: hidden;
+}
+
+/*******科室数据月报告------结束*****/
+
+/*******医生端登录------开始*****/
+.DoctorLoginWrape > header{
+  height:6.4rem;
+  background: url(../img/background.png) no-repeat;
+  background-size: 100% 6.4rem;
+  background-position: center;
+  padding: 0 12px;
+  margin-bottom: 12px;
+}
+
+.DoctorLoginWrape > header > .head-l{
+  .fl;
+  font-size: @font-size-small;
+  color: @white;
+  padding-top: 28px;
+}
+
+.DoctorLoginWrape > header > .head-l > .text > .p2{
+  font-size:12px;
+  margin-top: 6px;
+}
+
+.DoctorLoginWrape > header > .head-l > img{
+  vertical-align: -9px;
+  margin-right: 5px;
+}
+
+
+.DoctorLoginWrape > header > .head-r{
+  .fr;
+}
+
+.DoctorLoginWrape > header > .head-r > .download-a{
+  padding: 6px 15px;
+  border-radius: 5px;
+  border: 1px solid @white;
+  color: @white;
+  margin-top: 36px;
+  .db;
+}
+
+.DoctorLoginWrape > .login-item{
+  border-bottom: 1px solid @border;
+  border-top: 1px solid @border;
+  background: @white;
+  padding: 20px 0;
+  margin-bottom: 12px;
+  color: @main;
+  overflow-x:hidden;
+}
+
+.DoctorLoginWrape > .login-item > .big-title{
+  font-size: @font-size-large;
+  color: @main;
+  margin-bottom: 20px;
+  font-weight: normal;
+  .t-al-c;
+}
+
+.DoctorLoginWrape > .login-item > form{
+  padding: 0 15px;
+}
+
+.DoctorLoginWrape > .login-item .form-article{
+  .pr;
+}
+
+.DoctorLoginWrape > .login-item .form-article > .corner-l,
+.DoctorLoginWrape > .login-item .form-article > .corner-r{
+  width: 20px;
+  height:20px;
+  border: 1px solid @border;
+  border-radius: 100%;
+  background: @white;
+  .pa;
+  top:35px;
+  z-index: 10;
+}
+
+.DoctorLoginWrape > .login-item .form-article > .corner-l-f,
+.DoctorLoginWrape > .login-item .form-article > .corner-r-f {
+  width: 22px;
+  height: 24px;
+  background: @white;
+  .pa;
+  top:34px;
+  z-index: 10;
+  z-index: 12;
+}
+
+.DoctorLoginWrape > .login-item .form-article > .corner-l{
+  left: -11px;
+
+}
+
+.DoctorLoginWrape > .login-item .form-article > .corner-r{
+  right: -11px;
+}
+
+.DoctorLoginWrape > .login-item .form-article > .corner-l-f{
+  left: -22px;
+}
+
+.DoctorLoginWrape > .login-item .form-article > .corner-r-f{
+  right: -22px;
+}
+
+.DoctorLoginWrape > .login-item .form-article > .form-article-ul{
+  border-radius: 5px;
+  border: 1px solid @border;
+  padding: 0 15px;
+}
+
+.DoctorLoginWrape > .login-item .form-article > .form-article-ul > li{
+  height: 45px;
+  line-height: 45px;
+  border-bottom: 1px dashed @border;
+}
+
+.DoctorLoginWrape > .login-item .form-article > .form-article-ul > li:last-child{
+  border-bottom: none;
+}
+
+
+.DoctorLoginWrape > .login-item .form-article > .form-article-ul > li > .form-icon{
+  .fl;
+  .db;
+  margin-top: 8px;
+}
+
+.DoctorLoginWrape > .login-item .form-article > .form-article-ul > li > .form-icon.form-icon-1{
+  margin-top: 11.5px;
+}
+
+.DoctorLoginWrape > .login-item .form-article > .form-article-ul > li > .control-form{
+  padding-left:40px;
+}
+
+.DoctorLoginWrape > .login-item .form-article > .form-article-ul > li > .control-form > .form-input{
+  font-size: @font-size-small;
+  color: @main;
+  width: 100%;
+  border: none 0;
+  background: none;
+}
+
+.DoctorLoginWrape > .login-item .login-forgetpassword{
+  .t-al-r;
+  font-size: @font-size-middle;
+  margin-top: 10px;
+  margin-bottom: 18px;
+}
+
+.DoctorLoginWrape > .login-item .login-forgetpassword > .login-forgetpassword-a{
+  color: @green;
+}
+
+.DoctorLoginWrape > .login-download-app{
+  padding: 20px 15px;
+}
+
+.green-btn{
+  width: 100%;
+  height: 40px;
+  background: @green;
+  border: none;
+  color: @white;
+  font-size: @font-size-middle;
+  border-radius: 5px;
+  .t-al-c;
+  line-height: 40px;
+  .db;
+}
+
+
+.download-app{
+  .t-al-c;
+  font-size: @font-size-large;
+  color: @main;
+  padding: 20px 15px;
+}
+
+.download-app > .p1{
+  margin-bottom: 3px;
+}
+
+.download-app > .p2{
+  margin-bottom:40px;
+  color: @green;
+}
+
+.download-app > .p3{
+  margin-top: 10px;
+  margin-bottom: 6px;
+}
+
+.download-app > .imgWrape > .img-list{
+  width: 33.33%;
+  .fl;
+}
+
+.download-app > .imgWrape > .img-list > img{
+  width: 100%;
+  height: auto;
+}
+
+.download-app > .green-btn{
+  clear: both;
+  margin-top:36px;
+  margin-bottom: 16px;
+}
+
+.download-app > .warn-text{
+  font-size: @font-size-middle;
+}
+/*******医生端登录------结束*****/
+
+
+/*******选择数据库------开始*****/
+.SelectDataWrape{
+  padding: 0 20px;
+}
+
+.SelectDataWrape > .warn-text{
+  font-size: @font-size-middle;
+  color:@assist;
+  .t-al-c;
+  padding-top:30px;
+  margin-bottom: 10px;
+}
+
+.SelectDataWrape > .data-a{
+  height:50px;
+  line-height:50px;
+  background: @white;
+  .db;
+  margin-bottom: 15px;
+  border: 1px solid @green;
+  .t-al-c;
+  border-radius: 5px;
+  color: @green;
+  font-size:@font-size-middle;
+}
+/*******选择数据库------结束*****/
+
+/*******医学工具------开始*****/
+.items-node{
+  margin-top: 15px;
+}
+
+.items-node > .items-node-li{
+  padding: 12px 15px;
+  color:@main;
+  font-size: @font-size-middle;
+  border-bottom: 1px solid @border;
+  background: @white;
+}
+
+.items-node > .items-node-li > .items-node-a{
+  color:@main;
+  .db;
+  width: 100%;
+  height: 100%;
+}
+
+.items-node > .items-node-li > .items-node-a > .title{
+  .dib;
+}
+
+.items-node > .items-node-li > .items-node-a > .arrow-right{
+  background: url(../img/arrow_right.png) no-repeat;
+  background-size: 100%;
+  width:9px;
+  height:17px;
+  .fr;
+  .pr;
+  top:0;
+}
+/*******医学工具------结束*****/
+
+
+/*******计算体表面积------开始*****/
+.CalculatesurfaceAreaWrape > .gender-item{
+  margin-top: 15px;
+  background: @white;
+  border-bottom: 1px solid @border;
+  border-top: 1px solid @border;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+.CalculatesurfaceAreaWrape > .gender-item > ul > li{
+  width: 33.33%;
+  .fl;
+  .t-al-c;
+}
+
+.CalculatesurfaceAreaWrape > .gender-item > ul > li > .content{
+  border: 1px solid @border;
+  .border-radius;
+  background: @white;
+  width: 70px;
+  height: 40px;
+  line-height:40px;
+  .t-al-c;
+  font-size: @font-size-middle;
+  color: @middle-gray;
+  margin: auto;
+}
+
+.CalculatesurfaceAreaWrape > .gender-item > ul > li > .content.active{
+  border: 1px solid @green;
+  color: @green;
+  background: #ecfff5;
+}
+
+//.CalculatesurfaceAreaWrape > .gender-item > ul > li > .content.active > .check_ok{
+//    background: url("../img/check_ok.png") no-repeat;
+//    width: 15px;
+//    height: 15px;
+//    background-position: center;
+//    background-size: 100%;
+//    .dib;
+//    top: 1.5px;
+//    .pr;
+//}
+
+.CalculatesurfaceAreaWrape > .form-article{
+  background:@white;
+  font-size: @font-size-middle;
+  color: @main;
+  margin-bottom: 15px;
+  border-bottom: 1px solid @border;
+  border-top: 1px solid @border;
+}
+
+.CalculatesurfaceAreaWrape > .form-article > ul{
+  padding: 0 15px;
+}
+
+
+.CalculatesurfaceAreaWrape > .form-article > ul > li{
+  padding:8px 0;
+  border-bottom: 1px solid @border;
+  clear: both;
+  .pr;
+}
+
+.CalculatesurfaceAreaWrape > .form-article > ul > li:last-child{
+  border-bottom: none;
+}
+
+.CalculatesurfaceAreaWrape > .form-article > ul > li > .title{
+  .fl;
+  line-height: 30px;
+}
+
+.CalculatesurfaceAreaWrape > .form-article > ul > li > .input{
+  padding-left: 50px;
+  padding-right:40px;
+}
+
+.CalculatesurfaceAreaWrape > .form-article > ul > li > .input > input{
+  width:100%;
+  height: 30px;
+  background: @white;
+  border: none;
+  font-size: @font-size-middle;
+}
+
+.CalculatesurfaceAreaWrape > .form-article > ul > li > .right{
+  right: 0;
+  .pa;
+  top:12.5px;
+}
+
+
+.CalculatesurfaceAreaWrape > .res-article{
+  padding: 0 15px;
+  .dn;
+}
+
+.CalculatesurfaceAreaWrape > .res-article > .res-article-content{
+  background: @white;
+  .border-radius;
+  border: 1px solid @border;
+}
+
+.CalculatesurfaceAreaWrape > .res-article > .res-article-content > h1{
+  background: @green;
+  height: 35px;
+  line-height: 35px;
+  .t-al-c;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  color: @white;
+  font-size: @font-size-middle;
+}
+
+.CalculatesurfaceAreaWrape > .res-article > .res-article-content >.res{
+  border-bottom-left-radius:4px;
+  border-bottom-right-radius:4px;
+  font-size: @font-size-large;
+  color: @main;
+  height: 48px;
+  line-height: 48px;
+  .t-al-c;
+}
+
+
+.CalculatesurfaceAreaWrape > .footer-btn{
+  top:363px;
+  .pa;
+  width: 100%;
+  .t-al-c;
+}
+
+.CalculatesurfaceAreaWrape > .footer-btn > .footer-btn-content{
+  padding: 0 15px;
+}
+
+.CalculatesurfaceAreaWrape > .footer-btn > button{
+  width: 100%;
+  border: none;
+  background: @green;
+  .border-radius;
+  color: @white;
+  font-size: @font-size-middle;
+  height: 45px;
+  line-height: 45px;
+  .t-al-c;
+  font-weight:bold;
+}
+
+
+/*******计算体表面积------结束*****/
+
+
+
+
+
+
+
+
+
+
+
+
+
+

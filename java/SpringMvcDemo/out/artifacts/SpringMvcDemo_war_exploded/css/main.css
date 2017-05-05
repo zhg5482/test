@@ -1,0 +1,316 @@
+/* Value Setting */
+/*浅白色背景色*/
+/*主色调----文字黑色*/
+/*辅助色----文字灰色*/
+/*白色*/
+/*绿色*/
+/*底部标签分割线*/
+/*深灰色*/
+/*中灰色*/
+/*浅灰色*/
+.throught-line {
+  text-decoration: line-through;
+}
+.green {
+  color: #39a883;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.pf {
+  position: fixed;
+}
+.pr {
+  position: relative;
+}
+.pa {
+  position: absolute;
+}
+.dib {
+  display: inline-block;
+}
+.db {
+  display: block;
+}
+.dn {
+  display: none;
+}
+.t-al-l {
+  text-align: left;
+}
+.t-al-c {
+  text-align: center;
+}
+.t-al-r {
+  text-align: right;
+}
+/* Global Setting */
+body,
+button,
+input,
+select,
+textarea {
+  font-family: "黑体简", "微软雅黑", "黑体", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #222222;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+th,
+td,
+p,
+blockquote,
+pre,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+hr {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+input,
+label {
+  vertical-align: middle;
+}
+input,
+button,
+select,
+textarea,
+input:focus,
+textarea:focus {
+  -webkit-background-clip: padding-box;
+  outline: none;
+  -webkit-tap-highlight-color: #ffffff;
+}
+textarea {
+  resize: none;
+}
+a,
+a:hover,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+a:focus,
+*:focus {
+  outline: none;
+  outline: medium;
+}
+input[type="text"],
+input[type="password"],
+input[type="date"] {
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+img {
+  border: 0;
+}
+
+/*******度撑不开------结束*****/
+/*******医生端登录------开始*****/
+.DoctorLoginWrape > header {
+  height: 6.4rem;
+  background: url(../images/background.png) no-repeat;
+  background-size: 100% 6.4rem;
+  background-position: center;
+  padding: 0 12px;
+  margin-bottom: 12px;
+}
+.DoctorLoginWrape > header > .head-l {
+  float: left;
+  font-size: 14px;
+  color: #ffffff;
+  padding-top: 28px;
+}
+.DoctorLoginWrape > header > .head-l > .text > .p2 {
+  font-size: 12px;
+  margin-top: 6px;
+}
+.DoctorLoginWrape > header > .head-l > img {
+  vertical-align: -9px;
+  margin-right: 5px;
+}
+.DoctorLoginWrape > header > .head-r {
+  float: right;
+}
+.DoctorLoginWrape > header > .head-r > .download-a {
+  padding: 6px 15px;
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  margin-top: 36px;
+  display: block;
+}
+.DoctorLoginWrape > .login-item {
+  border-bottom: 1px solid #e1e5e5;
+  border-top: 1px solid #e1e5e5;
+  background: #ffffff;
+  padding: 20px 0;
+  margin-bottom: 12px;
+  color: #222222;
+  overflow-x: hidden;
+}
+.DoctorLoginWrape > .login-item > .big-title {
+  font-size: 18px;
+  color: #222222;
+  margin-bottom: 20px;
+  font-weight: normal;
+  text-align: center;
+}
+.DoctorLoginWrape > .login-item > form {
+  padding: 0 15px;
+}
+.DoctorLoginWrape > .login-item .form-article {
+  position: relative;
+}
+.DoctorLoginWrape > .login-item .form-article > .corner-l,
+.DoctorLoginWrape > .login-item .form-article > .corner-r {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #e1e5e5;
+  border-radius: 100%;
+  background: #ffffff;
+  position: absolute;
+  top: 35px;
+  z-index: 10;
+}
+.DoctorLoginWrape > .login-item .form-article > .corner-l-f,
+.DoctorLoginWrape > .login-item .form-article > .corner-r-f {
+  width: 22px;
+  height: 24px;
+  background: #ffffff;
+  position: absolute;
+  top: 34px;
+  z-index: 10;
+  z-index: 12;
+}
+.DoctorLoginWrape > .login-item .form-article > .corner-l {
+  left: -11px;
+}
+.DoctorLoginWrape > .login-item .form-article > .corner-r {
+  right: -11px;
+}
+.DoctorLoginWrape > .login-item .form-article > .corner-l-f {
+  left: -22px;
+}
+.DoctorLoginWrape > .login-item .form-article > .corner-r-f {
+  right: -22px;
+}
+.DoctorLoginWrape > .login-item .form-article > .form-article-ul {
+  border-radius: 5px;
+  border: 1px solid #e1e5e5;
+  padding: 0 15px;
+}
+.DoctorLoginWrape > .login-item .form-article > .form-article-ul > li {
+  height: 45px;
+  line-height: 45px;
+  border-bottom: 1px dashed #e1e5e5;
+}
+.DoctorLoginWrape > .login-item .form-article > .form-article-ul > li:last-child {
+  border-bottom: none;
+}
+.DoctorLoginWrape > .login-item .form-article > .form-article-ul > li > .form-icon {
+  float: left;
+  display: block;
+  margin-top: 8px;
+}
+.DoctorLoginWrape > .login-item .form-article > .form-article-ul > li > .form-icon.form-icon-1 {
+  margin-top: 11.5px;
+}
+.DoctorLoginWrape > .login-item .form-article > .form-article-ul > li > .control-form {
+  padding-top: 16px;
+  padding-left: 40px;
+}
+.DoctorLoginWrape > .login-item .form-article > .form-article-ul > li > .control-form > .form-input {
+  font-size: 14px;
+  color: #222222;
+  width: 100%;
+  border: none 0;
+  background: none;
+}
+.DoctorLoginWrape > .login-item .login-forgetpassword {
+  text-align: right;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 18px;
+}
+.DoctorLoginWrape > .login-item .login-forgetpassword > .login-forgetpassword-a {
+  color: #39a883;
+  cursor: pointer;
+}
+.DoctorLoginWrape > .login-download-app {
+  padding: 20px 15px;
+}
+.green-btn {
+  width: 100%;
+  height: 40px;
+  background: #39a883;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 40px;
+  display: block;
+}
+.download-app {
+  text-align: center;
+  font-size: 18px;
+  color: #222222;
+  padding: 20px 15px;
+}
+.download-app > .p1 {
+  margin-bottom: 3px;
+}
+.download-app > .p2 {
+  margin-bottom: 40px;
+  color: #39a883;
+}
+.download-app > .p3 {
+  margin-top: 10px;
+  margin-bottom: 6px;
+}
+.download-app > .imgWrape > .img-list {
+  width: 33.33%;
+  float: left;
+}
+.download-app > .imgWrape > .img-list > img {
+  width: 100%;
+  height: auto;
+}
+.download-app > .green-btn {
+  clear: both;
+  margin-top: 36px;
+  margin-bottom: 16px;
+}
+.download-app > .warn-text {
+  font-size: 16px;
+}
+/*******医生端登录------结束*****/
